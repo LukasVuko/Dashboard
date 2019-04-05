@@ -1,0 +1,88 @@
+// Media query mixin //
+
+@mixin mq($break) {
+  $value: map-get($breakpoints, $break);
+  @media (min-width: $value) {
+    @content;
+  }
+}
+
+// Flex Box Mixin //
+
+@mixin flexy($col-row) {
+  display: flex;
+  flex-direction: $col-row;
+  justify-content: space-between;
+  align-items: center;
+  //   @include mq("med") {
+  //     align-items: center;
+  //   }
+}
+
+// Grid Mixin //
+@mixin grid() {
+  body {
+    display: grid;
+    height: 100vh;
+  }
+  @media (min-width: 768px) {
+    body {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 90px 5fr 5fr;
+      grid-template-rows: 100px repeat(7, auto);
+
+      grid-template-areas:
+        "header header header"
+        "aside main main";
+    }
+
+    header {
+      grid-area: header;
+      height: 100px;
+    }
+    .aside {
+      grid-area: aside;
+      height: 100%;
+    }
+    .navigationAside {
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 350px;
+    }
+    .search-container {
+      grid-area: search;
+    }
+    .notification {
+      grid-area: notification;
+    }
+    .traffic {
+      grid-area: traffic;
+    }
+    .dailyTraffic {
+      grid-area: dailyTraffic;
+    }
+    .mobileUsers {
+      grid-area: mobileUsers;
+    }
+    #socialStats {
+      grid-area: socialStats;
+    }
+    #newMembers {
+      grid-area: newMembers;
+    }
+    #recentActivity {
+      grid-area: recentActivity;
+    }
+    #messageUser {
+      grid-area: messageUser;
+    }
+    #settings {
+      grid-area: settings;
+    }
+    /* grid-template-columns: 90px repeat(auto-fit, minmax(200px, 5fr)) */
+  }
+}

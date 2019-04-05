@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
+
+// FONTS //
+$font-stack-logo: "Montserrat", sans-serif;
+$font-stack-primary: "Open Sans", sans-serif;
+
+// Layout Colors //
+
+$color-background: rgba(115, 120, 186, 1);
+
+// Media breakpoints
+$breakpoints: (
+  "sm": 375px,
+  "med": 768px,
+  "lg": 1100px
+);

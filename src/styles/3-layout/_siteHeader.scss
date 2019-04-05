@@ -1,0 +1,26 @@
+header {
+  background-color: $color-background;
+  color: white;
+}
+
+.inner-header {
+  width: 90%;
+  margin: 0 auto;
+  @include flexy(row);
+}
+
+.logo-container {
+  h1 {
+    font-size: 16px;
+  }
+}
+.notification-container {
+  li,
+  img {
+    height: 35px;
+    width: 35px;
+  }
+  img {
+    border-radius: 50px;
+  }
+}
