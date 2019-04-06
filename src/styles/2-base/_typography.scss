@@ -1,3 +1,17 @@
-h1 {
-  font-family: "Montserrat", "Open Sans";
+header,
+.inner-header,
+.logo-container,
+.navigation-container,
+h1,
+a,
+span {
+  font-size: inherit;
+}
+
+h1 a {
+  font-family: "Montserrat";
+  font-weight: 100;
+  span {
+    font-weight: 900;
+  }
 }

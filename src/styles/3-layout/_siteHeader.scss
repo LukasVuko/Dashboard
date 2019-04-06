@@ -1,26 +1,46 @@
+li svg,
+li img {
+  height: 28px;
+  width: 28px;
+}
+li img {
+  border-radius: 50px;
+}
 header {
   background-color: $color-background;
   color: white;
+  width: 100%;
 }
-
 .inner-header {
   width: 90%;
   margin: 0 auto;
-  @include flexy(row);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
 }
 
 .logo-container {
+  margin-right: auto;
   h1 {
-    font-size: 16px;
+    display: flex;
+    align-items: center;
   }
 }
+
 .notification-container {
-  li,
-  img {
-    height: 35px;
-    width: 35px;
-  }
-  img {
-    border-radius: 50px;
+  display: flex;
+  align-items: center;
+  li {
+    padding-left: 0px;
+    padding-right: 13px;
+    & a {
+      display: flex;
+      align-items: center;
+    }
+    &:last-child {
+      padding-right: 0;
+      font-size: 0.9em;
+    }
   }
 }
