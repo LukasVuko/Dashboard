@@ -4,6 +4,7 @@ h1 {
 }
 
 * {
+  border: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,4 +13,9 @@ h1 {
   color: inherit;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  background-color: inherit;
+}
+
+body {
+  background-color: white;
 }

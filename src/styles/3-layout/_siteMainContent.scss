@@ -6,11 +6,27 @@
 // Search Dashboard
 
 .searchDashboard {
-  background-color: grey;
+  background-color: rgb(251, 251, 251);
   display: flex;
-  align-items: center;
-  li {
-    margin-right: auto;
+  align-items: space-between;
+  height: 40px;
+  .panel-title {
+    background-color: white;
+    display: flex;
+    border-right: 1px grey solid;
+    li {
+      margin: auto;
+      padding: 0 15px;
+      color: grey;
+    }
+  }
+  .panel-search {
+    padding-right: 15px;
+    border-bottom: 1px grey solid;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
   }
 }
 
@@ -21,20 +37,71 @@ form.search {
 }
 
 form.search input[type="text"] {
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid grey;
-  background: #f1f1f1;
+  padding: 6px;
+  font-size: 14px;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+  background: white;
+  border-radius: 5px 0 0 5px;
+  width: 180px;
 }
 
 form.search button {
-  background: #2196f3;
-  color: white;
-  width: 15px;
-  border: 1px solid grey;
+  background: white;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 0 5px 5px 0;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  transition: background 0.3s ease-in-out;
+}
+form.search button svg {
+  width: 34px;
+  height: 18px;
+  margin: 0 auto;
+  padding: 0;
+  fill: grey;
 }
 
 form.search button:hover {
-  background: #0b7dda;
+  background: $color-background;
+  svg {
+    fill: white;
+  }
+}
+
+// Notification
+.notification {
+  display: flex;
+  align-items: center;
+}
+
+.alert {
+  padding: 6px;
+  margin: 10px auto;
+  background-color: $color-background;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  strong {
+    font-size: inherit;
+  }
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }
