@@ -397,7 +397,7 @@ aside {
       margin: 0 auto; }
 
 .wrapper {
-  padding: 5px; }
+  padding: 0 10px; }
 
 .searchDashboard {
   background-color: #fbfbfb;
@@ -482,7 +482,34 @@ form.search button:hover {
   cursor: pointer;
   transition: 0.3s; }
 
-.closebtn:hover {
-  color: black; }
+.traffic {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.traffic-title {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center; }
+  .traffic-title h3 {
+    margin: 10px auto; }
+  .traffic-title ul {
+    display: flex;
+    flex-direction: row; }
+    .traffic-title ul li {
+      background-color: white;
+      margin-left: 15px;
+      padding: 5px;
+      border-radius: 11px;
+      cursor: pointer; }
+    .traffic-title ul li:first-child {
+      margin-left: 0; }
+    .traffic-title ul li:hover {
+      color: white;
+      background-color: #9dd196;
+      cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

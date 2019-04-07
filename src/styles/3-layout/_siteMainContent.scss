@@ -1,6 +1,6 @@
 // Main wrapper
 .wrapper {
-  padding: 5px;
+  padding: 0 10px;
 }
 
 // Search Dashboard
@@ -102,6 +102,44 @@ form.search button:hover {
   transition: 0.3s;
 }
 
-.closebtn:hover {
-  color: black;
+// TRAFFIC
+
+.traffic {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.traffic-title {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  h3 {
+    margin: 10px auto;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      background-color: white;
+      margin-left: 15px;
+      padding: 5px;
+      border-radius: 11px;
+      cursor: pointer;
+    }
+    li:first-child {
+      margin-left: 0;
+    }
+    li:hover {
+      color: white;
+      background-color: $btn-color-hover;
+      cursor: pointer;
+    }
+  }
+}
+
+.traffic-chart {
 }
