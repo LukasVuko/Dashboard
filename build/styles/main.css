@@ -397,7 +397,8 @@ aside {
       margin: 0 auto; }
 
 .wrapper {
-  padding: 0 10px; }
+  padding: 0 10px;
+  margin-bottom: 2em; }
 
 .searchDashboard {
   background-color: #fbfbfb;
@@ -587,22 +588,50 @@ form.search button:hover {
 .recentActivity h3 {
   margin: 1em 0; }
 
-.recentActityCard {
+.recentActivityCard {
   display: flex;
   padding: 1em 0;
   border-bottom: 1px grey solid;
   justify-content: left; }
-  .recentActityCard img {
+  .recentActivityCard img {
     height: 35px;
     width: 35px;
     border-radius: 50%; }
-  .recentActityCard .recentActityMiniCard {
+  .recentActivityCard .recentActivityMiniCard {
     margin-left: 1em; }
-    .recentActityCard .recentActityMiniCard .email {
+    .recentActivityCard .recentActivityMiniCard .activity {
       color: #7378ba;
       font-size: 0.8em; }
-  .recentActityCard .date {
-    margin: auto 0 auto auto;
+  .recentActivityCard .arrow {
+    margin: auto 0 auto 1em;
     font-size: 0.9em; }
+
+.messageUser h3 {
+  margin: 1em 0; }
+
+form.sendEmail {
+  display: flex;
+  flex-direction: column; }
+  form.sendEmail label {
+    display: none; }
+  form.sendEmail input,
+  form.sendEmail textarea {
+    background: #fbfbfb;
+    border: 1px block solid;
+    margin: 1em 0 0 0;
+    padding: 0.8em 1.2em;
+    border-radius: 8px;
+    border: grey solid 1px; }
+
+form.sendEmail [type="Submit"] {
+  background-color: #7378ba;
+  color: white;
+  font-weight: 800;
+  border: none; }
+  form.sendEmail [type="Submit"]:hover {
+    background-color: #9599cb; }
+
+.settings h3 {
+  margin: 1em 0; }
 
 /*# sourceMappingURL=main.css.map */

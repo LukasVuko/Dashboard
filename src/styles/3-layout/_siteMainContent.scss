@@ -1,6 +1,7 @@
 // Main wrapper
 .wrapper {
   padding: 0 10px;
+  margin-bottom: 2em;
 }
 
 // Search Dashboard
@@ -216,9 +217,6 @@ form.search button:hover {
   }
 }
 
-.newMemberContainer {
-}
-
 .newMemberCard {
   display: flex;
   padding: 1em 0;
@@ -252,10 +250,7 @@ form.search button:hover {
   }
 }
 
-.recentActityContainer {
-}
-
-.recentActityCard {
+.recentActivityCard {
   display: flex;
   padding: 1em 0;
   border-bottom: 1px grey solid;
@@ -265,17 +260,57 @@ form.search button:hover {
     width: 35px;
     border-radius: 50%;
   }
-  .recentActityMiniCard {
+  .recentActivityMiniCard {
     margin-left: 1em;
-    .name {
-    }
-    .email {
+    .activity {
       color: $color-background;
       font-size: 0.8em;
     }
   }
-  .date {
-    margin: auto 0 auto auto;
+  .arrow {
+    margin: auto 0 auto 1em;
     font-size: 0.9em;
+  }
+}
+
+// Message User
+
+.messageUser {
+  h3 {
+    margin: 1em 0;
+  }
+}
+
+form.sendEmail {
+  display: flex;
+  flex-direction: column;
+  label {
+    display: none;
+  }
+  input,
+  textarea {
+    background: $color-background-off-white;
+    border: 1px block solid;
+    margin: 1em 0 0 0;
+    padding: 0.8em 1.2em;
+    border-radius: 8px;
+    border: grey solid 1px;
+  }
+}
+
+form.sendEmail [type="Submit"] {
+  background-color: $color-background;
+  color: white;
+  font-weight: 800;
+  border: none;
+  &:hover {
+    background-color: $color-background-lighten;
+  }
+}
+
+// SETTINGS
+.settings {
+  h3 {
+    margin: 1em 0;
   }
 }
