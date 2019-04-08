@@ -541,15 +541,68 @@ form.search button:hover {
   margin: 0 auto 1em auto;
   padding: 1em 0;
   padding-left: 10%; }
-  .widget-card .widget-logo {
-    height: 5em;
-    width: 5em;
-    margin: auto 0;
-    background-color: grey;
-    padding: 20px;
-    border: 0px solid black;
+
+.svg-container {
+  height: 5em;
+  width: 5em;
+  margin: auto 0;
+  background-color: #7378ba;
+  border-radius: 50%;
+  display: flex; }
+
+.widget-logo {
+  margin: auto;
+  height: 50px;
+  width: 50px; }
+
+.widget-text-container {
+  margin-left: 20px; }
+  .widget-text-container h3 {
+    margin: 0;
+    padding: 0; }
+  .widget-text-container .widget-number {
+    font-size: 2.5em; }
+
+.newMembers h3 {
+  margin: 1em 0; }
+
+.newMemberCard {
+  display: flex;
+  padding: 1em 0;
+  border-bottom: 1px grey solid;
+  justify-content: left; }
+  .newMemberCard img {
+    height: 35px;
+    width: 35px;
     border-radius: 50%; }
-  .widget-card .widget-text-container {
+  .newMemberCard .newMemberMiniCard {
     margin-left: 1em; }
+    .newMemberCard .newMemberMiniCard .email {
+      color: #7378ba;
+      font-size: 0.8em; }
+  .newMemberCard .date {
+    margin: auto 0 auto auto;
+    font-size: 0.9em; }
+
+.recentActivity h3 {
+  margin: 1em 0; }
+
+.recentActityCard {
+  display: flex;
+  padding: 1em 0;
+  border-bottom: 1px grey solid;
+  justify-content: left; }
+  .recentActityCard img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%; }
+  .recentActityCard .recentActityMiniCard {
+    margin-left: 1em; }
+    .recentActityCard .recentActityMiniCard .email {
+      color: #7378ba;
+      font-size: 0.8em; }
+  .recentActityCard .date {
+    margin: auto 0 auto auto;
+    font-size: 0.9em; }
 
 /*# sourceMappingURL=main.css.map */
