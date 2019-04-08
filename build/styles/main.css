@@ -498,12 +498,13 @@ form.search button:hover {
     margin: 10px auto; }
   .traffic-title ul {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    padding-bottom: 20px; }
     .traffic-title ul li {
       background-color: white;
       margin-left: 15px;
-      padding: 5px;
-      border-radius: 11px;
+      padding: 5px 10px;
+      border-radius: 15px;
       cursor: pointer; }
     .traffic-title ul li:first-child {
       margin-left: 0; }
@@ -511,5 +512,45 @@ form.search button:hover {
       color: white;
       background-color: #9dd196;
       cursor: pointer; }
+
+.dailyTraffic {
+  display: flex;
+  flex-direction: column; }
+  .dailyTraffic h3 {
+    margin: 10px auto; }
+
+.mobileUsers {
+  display: flex;
+  flex-direction: column; }
+  .mobileUsers h3 {
+    margin: 10px auto; }
+
+.socialStats {
+  display: flex;
+  flex-direction: column; }
+  .socialStats h3 {
+    margin: 1em auto; }
+
+.widget-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #eeeff7;
+  border: #9799cf 1px solid;
+  border-radius: 5px;
+  justify-content: left;
+  width: 78%;
+  margin: 0 auto 1em auto;
+  padding: 1em 0;
+  padding-left: 10%; }
+  .widget-card .widget-logo {
+    height: 5em;
+    width: 5em;
+    margin: auto 0;
+    background-color: grey;
+    padding: 20px;
+    border: 0px solid black;
+    border-radius: 50%; }
+  .widget-card .widget-text-container {
+    margin-left: 1em; }
 
 /*# sourceMappingURL=main.css.map */
