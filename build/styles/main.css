@@ -639,7 +639,7 @@ form.sendEmail [type="Submit"] {
   .settings div {
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 0.5em auto;
     justify-content: space-between; }
 
@@ -719,5 +719,75 @@ input:checked + .slider:before {
     color: white; }
     .saveReset button[class="reset"] {
       background-color: grey; }
+
+body {
+  display: grid;
+  height: 100vh; }
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: 70px 1fr 1fr;
+    grid-template-rows: 70px repeat(7, auto);
+    grid-template-areas: "header header header" "aside main main" "aside main main" "aside main main" "aside main main" "aside main main" "aside main main" "aside main main"; }
+
+  header {
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+    display: flex; }
+    header .inner-header {
+      align-self: center;
+      font-size: 1.5em; }
+
+  aside {
+    grid-area: aside;
+    height: 100%;
+    width: 100%; }
+    aside .inner-aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      aside .inner-aside li {
+        margin: 2em 0; }
+
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px repeat(5, 1fr);
+    grid-template-areas: "search search" "notification notification" "traffic traffic" "dailyTraffic mobileUsers" "socialStats socialStats" "newMembers recentActivity" "messageUser settings min"; }
+
+  .search-container {
+    grid-area: search; }
+
+  .notification {
+    grid-area: notification; }
+
+  .traffic {
+    grid-area: traffic; }
+
+  .dailyTraffic {
+    grid-area: dailyTraffic; }
+
+  .mobileUsers {
+    grid-area: mobileUsers; }
+
+  .socialStats {
+    grid-area: socialStats; }
+
+  .newMembers {
+    grid-area: newMembers; }
+
+  .recentActivity {
+    grid-area: recentActivity; }
+
+  .messageUser {
+    grid-area: messageUser; }
+
+  .settings {
+    grid-area: settings; }
+
+  /* grid-template-columns: 90px repeat(auto-fit, minmax(200px, 5fr)) */ }
 
 /*# sourceMappingURL=main.css.map */

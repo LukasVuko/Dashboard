@@ -27,32 +27,61 @@
   }
   @media (min-width: 768px) {
     body {
-      display: grid;
-      height: 100vh;
-      grid-template-columns: 90px 5fr 5fr;
-      grid-template-rows: 100px repeat(7, auto);
+      grid-template-columns: 70px 1fr 1fr;
+      grid-template-rows: 70px repeat(7, auto);
 
       grid-template-areas:
         "header header header"
+        "aside main main"
+        "aside main main"
+        "aside main main"
+        "aside main main"
+        "aside main main"
+        "aside main main"
         "aside main main";
     }
 
     header {
       grid-area: header;
-      height: 100px;
-    }
-    .aside {
-      grid-area: aside;
-      height: 100%;
-    }
-    .navigationAside {
       height: 100%;
       width: 100%;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      height: 350px;
+      display: flex;
+      .inner-header {
+        align-self: center;
+        font-size: 1.5em;
+      }
     }
+    aside {
+      grid-area: aside;
+      height: 100%;
+      width: 100%;
+      .inner-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        li {
+          margin: 2em 0;
+        }
+      }
+    }
+    main {
+      grid-area: main;
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 50px 50px repeat(5, 1fr);
+
+      grid-template-areas:
+        "search search"
+        "notification notification"
+        "traffic traffic"
+        "dailyTraffic mobileUsers"
+        "socialStats socialStats"
+        "newMembers recentActivity"
+        "messageUser settings min";
+    }
+
     .search-container {
       grid-area: search;
     }
@@ -68,19 +97,19 @@
     .mobileUsers {
       grid-area: mobileUsers;
     }
-    #socialStats {
+    .socialStats {
       grid-area: socialStats;
     }
-    #newMembers {
+    .newMembers {
       grid-area: newMembers;
     }
-    #recentActivity {
+    .recentActivity {
       grid-area: recentActivity;
     }
-    #messageUser {
+    .messageUser {
       grid-area: messageUser;
     }
-    #settings {
+    .settings {
       grid-area: settings;
     }
     /* grid-template-columns: 90px repeat(auto-fit, minmax(200px, 5fr)) */

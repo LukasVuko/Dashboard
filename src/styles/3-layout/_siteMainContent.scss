@@ -318,7 +318,7 @@ form.sendEmail [type="Submit"] {
   div {
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 0.5em auto;
     justify-content: space-between;
   }
@@ -413,3 +413,5 @@ input:checked + .slider:before {
     }
   }
 }
+
+@include grid();
