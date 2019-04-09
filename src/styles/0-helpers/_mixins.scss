@@ -70,7 +70,7 @@
       display: grid;
 
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 50px 50px repeat(5, 1fr);
+      grid-template-rows: 50px 50px repeat(5, auto);
 
       grid-template-areas:
         "search search"
@@ -79,10 +79,10 @@
         "dailyTraffic mobileUsers"
         "socialStats socialStats"
         "newMembers recentActivity"
-        "messageUser settings min";
+        "messageUser settings";
     }
 
-    .search-container {
+    .searchDashboard {
       grid-area: search;
     }
     .notification {
@@ -99,6 +99,13 @@
     }
     .socialStats {
       grid-area: socialStats;
+      .widgetsContainer {
+        display: flex;
+        flex-direction: row;
+        .widgetCard {
+          width: 30%;
+        }
+      }
     }
     .newMembers {
       grid-area: newMembers;
@@ -112,6 +119,5 @@
     .settings {
       grid-area: settings;
     }
-    /* grid-template-columns: 90px repeat(auto-fit, minmax(200px, 5fr)) */
   }
 }

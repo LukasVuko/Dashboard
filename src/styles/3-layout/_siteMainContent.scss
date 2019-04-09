@@ -174,38 +174,45 @@ form.search button:hover {
   }
 }
 
-.widget-card {
+.widgetsContainer {
+}
+
+.widgetCard {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
   background-color: #eeeff7;
   border: #9799cf 1px solid;
-  border-radius: 5px;
-  width: 78%;
-  margin: 0 auto 1em auto;
-  padding: 1em 0;
-  padding-left: 10%;
-}
-.svg-container {
-  height: 5em;
-  width: 5em;
-  margin: auto 0;
-  background-color: $color-background;
-  border-radius: 50%;
-  display: flex;
-}
-.widget-logo {
-  margin: auto;
-  height: 50px;
-  width: 50px;
-}
-.widget-text-container {
-  margin-left: 20px;
-  h3 {
-    margin: 0;
-    padding: 0;
+  border-radius: 6px;
+  padding: 1em;
+  align-items: center;
+  margin-bottom: 1em;
+  .svgBack {
+    height: 5em;
+    width: 5em;
+    background: grey;
+    border-radius: 50%;
+    display: absolute;
+    svg {
+      position: relative;
+      top: 25px;
+      left: 25px;
+      height: 50%;
+      width: 50%;
+      margin: auto;
+    }
   }
-  .widget-number {
-    font-size: 2.5em;
+  .text {
+    flex: 1;
+    p:first-child {
+      color: $color-background;
+      font-weight: 800;
+    }
+    p:last-child {
+      font-size: 2em;
+    }
   }
 }
 

@@ -532,37 +532,38 @@ form.search button:hover {
   .socialStats h3 {
     margin: 1em auto; }
 
-.widget-card {
+.widgetCard {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
   background-color: #eeeff7;
   border: #9799cf 1px solid;
-  border-radius: 5px;
-  width: 78%;
-  margin: 0 auto 1em auto;
-  padding: 1em 0;
-  padding-left: 10%; }
-
-.svg-container {
-  height: 5em;
-  width: 5em;
-  margin: auto 0;
-  background-color: #7378ba;
-  border-radius: 50%;
-  display: flex; }
-
-.widget-logo {
-  margin: auto;
-  height: 50px;
-  width: 50px; }
-
-.widget-text-container {
-  margin-left: 20px; }
-  .widget-text-container h3 {
-    margin: 0;
-    padding: 0; }
-  .widget-text-container .widget-number {
-    font-size: 2.5em; }
+  border-radius: 6px;
+  padding: 1em;
+  align-items: center;
+  margin-bottom: 1em; }
+  .widgetCard .svgBack {
+    height: 5em;
+    width: 5em;
+    background: grey;
+    border-radius: 50%;
+    display: absolute; }
+    .widgetCard .svgBack svg {
+      position: relative;
+      top: 25px;
+      left: 25px;
+      height: 50%;
+      width: 50%;
+      margin: auto; }
+  .widgetCard .text {
+    flex: 1; }
+    .widgetCard .text p:first-child {
+      color: #7378ba;
+      font-weight: 800; }
+    .widgetCard .text p:last-child {
+      font-size: 2em; }
 
 .newMembers h3 {
   margin: 1em 0; }
@@ -755,10 +756,10 @@ body {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 50px repeat(5, 1fr);
-    grid-template-areas: "search search" "notification notification" "traffic traffic" "dailyTraffic mobileUsers" "socialStats socialStats" "newMembers recentActivity" "messageUser settings min"; }
+    grid-template-rows: 50px 50px repeat(5, auto);
+    grid-template-areas: "search search" "notification notification" "traffic traffic" "dailyTraffic mobileUsers" "socialStats socialStats" "newMembers recentActivity" "messageUser settings"; }
 
-  .search-container {
+  .searchDashboard {
     grid-area: search; }
 
   .notification {
@@ -775,6 +776,11 @@ body {
 
   .socialStats {
     grid-area: socialStats; }
+    .socialStats .widgetsContainer {
+      display: flex;
+      flex-direction: row; }
+      .socialStats .widgetsContainer .widgetCard {
+        width: 30%; }
 
   .newMembers {
     grid-area: newMembers; }
@@ -786,8 +792,6 @@ body {
     grid-area: messageUser; }
 
   .settings {
-    grid-area: settings; }
-
-  /* grid-template-columns: 90px repeat(auto-fit, minmax(200px, 5fr)) */ }
+    grid-area: settings; } }
 
 /*# sourceMappingURL=main.css.map */
