@@ -5,12 +5,13 @@ $font-stack-logo: "Montserrat", sans-serif;
 $font-stack-primary: "Open Sans", sans-serif;
 
 // Layout Colors //
-
+$color-border: #dcdcdc;
 $color-background: rgba(115, 120, 186, 1);
 $color-background-lighten: lighten(rgba(115, 120, 186, 1), 10%);
 $color-background-secondary: #4c4d6f;
 $color-background-off-white: rgb(251, 251, 251);
 $btn-color-hover: rgb(157, 209, 150);
+
 // Media breakpoints
 $breakpoints: (
   "sm": 375px,

@@ -90,15 +90,19 @@
     }
     .traffic {
       grid-area: traffic;
+      border-bottom: $color-border solid 1px;
     }
     .dailyTraffic {
       grid-area: dailyTraffic;
+      border-right: $color-border solid 1px;
     }
     .mobileUsers {
       grid-area: mobileUsers;
     }
     .socialStats {
       grid-area: socialStats;
+      border-top: $color-border solid 1px;
+      border-bottom: $color-border solid 1px;
       .widgetsContainer {
         display: flex;
         flex-direction: row;
@@ -109,15 +113,30 @@
     }
     .newMembers {
       grid-area: newMembers;
+      border-right: $color-border solid 1px;
+      border-bottom: $color-border solid 1px;
+      .newMemberContainer:last-child {
+        padding-bottom: 1em;
+      }
     }
     .recentActivity {
       grid-area: recentActivity;
+      border-bottom: $color-border solid 1px;
     }
     .messageUser {
       grid-area: messageUser;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: $color-border solid 1px;
+      margin-bottom: 1em;
     }
     .settings {
       grid-area: settings;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 1em;
     }
   }
 }

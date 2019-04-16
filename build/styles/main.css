@@ -399,6 +399,9 @@ aside {
 .wrapper {
   padding: 0 10px;
   margin-bottom: 2em; }
+  @media (min-width: 768px) {
+    .wrapper {
+      margin-bottom: 0; } }
 
 .searchDashboard {
   background-color: #fbfbfb;
@@ -544,19 +547,9 @@ form.search button:hover {
   padding: 1em;
   align-items: center;
   margin-bottom: 1em; }
-  .widgetCard .svgBack {
-    height: 5em;
+  .widgetCard svg {
     width: 5em;
-    background: grey;
-    border-radius: 50%;
-    display: absolute; }
-    .widgetCard .svgBack svg {
-      position: relative;
-      top: 25px;
-      left: 25px;
-      height: 50%;
-      width: 50%;
-      margin: auto; }
+    height: 5em; }
   .widgetCard .text {
     flex: 1; }
     .widgetCard .text p:first-child {
@@ -599,7 +592,7 @@ form.search button:hover {
     width: 35px;
     border-radius: 50%; }
   .recentActivityCard .recentActivityMiniCard {
-    margin-left: 1em; }
+    margin: auto auto auto 1em; }
     .recentActivityCard .recentActivityMiniCard .activity {
       color: #7378ba;
       font-size: 0.8em; }
@@ -643,6 +636,8 @@ form.sendEmail [type="Submit"] {
     width: 100%;
     margin: 0.5em auto;
     justify-content: space-between; }
+    .settings div:last-child {
+      margin-bottom: 0; }
 
 .switch {
   position: relative;
@@ -713,7 +708,7 @@ input:checked + .slider:before {
   justify-content: space-between; }
   .saveReset button {
     background-color: #7378ba;
-    padding: 1em;
+    padding: 0.8em 1em;
     border-radius: 6px;
     width: 45%;
     cursor: pointer;
@@ -766,16 +761,20 @@ body {
     grid-area: notification; }
 
   .traffic {
-    grid-area: traffic; }
+    grid-area: traffic;
+    border-bottom: #dcdcdc solid 1px; }
 
   .dailyTraffic {
-    grid-area: dailyTraffic; }
+    grid-area: dailyTraffic;
+    border-right: #dcdcdc solid 1px; }
 
   .mobileUsers {
     grid-area: mobileUsers; }
 
   .socialStats {
-    grid-area: socialStats; }
+    grid-area: socialStats;
+    border-top: #dcdcdc solid 1px;
+    border-bottom: #dcdcdc solid 1px; }
     .socialStats .widgetsContainer {
       display: flex;
       flex-direction: row; }
@@ -783,15 +782,29 @@ body {
         width: 30%; }
 
   .newMembers {
-    grid-area: newMembers; }
+    grid-area: newMembers;
+    border-right: #dcdcdc solid 1px;
+    border-bottom: #dcdcdc solid 1px; }
+    .newMembers .newMemberContainer:last-child {
+      padding-bottom: 1em; }
 
   .recentActivity {
-    grid-area: recentActivity; }
+    grid-area: recentActivity;
+    border-bottom: #dcdcdc solid 1px; }
 
   .messageUser {
-    grid-area: messageUser; }
+    grid-area: messageUser;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: #dcdcdc solid 1px;
+    margin-bottom: 1em; }
 
   .settings {
-    grid-area: settings; } }
+    grid-area: settings;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1em; } }
 
 /*# sourceMappingURL=main.css.map */

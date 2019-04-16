@@ -2,6 +2,9 @@
 .wrapper {
   padding: 0 10px;
   margin-bottom: 2em;
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 // Search Dashboard
@@ -189,20 +192,9 @@ form.search button:hover {
   padding: 1em;
   align-items: center;
   margin-bottom: 1em;
-  .svgBack {
-    height: 5em;
+  svg {
     width: 5em;
-    background: grey;
-    border-radius: 50%;
-    display: absolute;
-    svg {
-      position: relative;
-      top: 25px;
-      left: 25px;
-      height: 50%;
-      width: 50%;
-      margin: auto;
-    }
+    height: 5em;
   }
   .text {
     flex: 1;
@@ -268,7 +260,7 @@ form.search button:hover {
     border-radius: 50%;
   }
   .recentActivityMiniCard {
-    margin-left: 1em;
+    margin: auto auto auto 1em;
     .activity {
       color: $color-background;
       font-size: 0.8em;
@@ -328,6 +320,9 @@ form.sendEmail [type="Submit"] {
     width: 100%;
     margin: 0.5em auto;
     justify-content: space-between;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -410,7 +405,7 @@ input:checked + .slider:before {
   justify-content: space-between;
   button {
     background-color: $color-background;
-    padding: 1em;
+    padding: 0.8em 1em;
     border-radius: 6px;
     width: 45%;
     cursor: pointer;
