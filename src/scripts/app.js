@@ -137,10 +137,9 @@ createCircleChart(
 
 // Message User
 
-const messageDiv = document.getElementsByClassName("sendEmail")[0];
+const div = document.getElementsByClassName("sendEmail")[0];
 let search = document.getElementById("email");
 let message = document.getElementById("message");
-const send = document.getElementById("send");
 
 function sendMail(element) {
   element.addEventListener("click", e => {
@@ -162,4 +161,4 @@ function sendMail(element) {
   });
 }
 
-sendMail(messageDiv);
+sendMail(div);
