@@ -30,6 +30,10 @@
       grid-template-columns: 70px 1fr 1fr;
       grid-template-rows: 70px repeat(7, auto);
 
+      // @media (min-width: 1000px) {
+      //   grid-template-columns: 100px 1fr 1fr;
+      //   grid-template-rows: 100px repeat(7, auto);
+      // }
       grid-template-areas:
         "header header header"
         "aside main main"
@@ -91,6 +95,9 @@
     .traffic {
       grid-area: traffic;
       border-bottom: $color-border solid 1px;
+      .traffic-chart {
+        height: 300px;
+      }
     }
     .dailyTraffic {
       grid-area: dailyTraffic;

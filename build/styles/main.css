@@ -378,6 +378,23 @@ header {
       padding-right: 0;
       font-size: 0.9em; }
 
+.dotContainer {
+  position: relative; }
+
+.green-dot {
+  position: absolute;
+  width: 0.4375em;
+  height: 0.4375em;
+  background-color: #81c98f;
+  border-radius: 50%;
+  right: 0.75em;
+  top: 0em; }
+
+.notBell {
+  transition: transform 0.5s ease-out; }
+  .notBell:hover {
+    transform: scale(1.1); }
+
 aside {
   background-color: #4c4d6f; }
 
@@ -472,7 +489,8 @@ form.search button:hover {
   background-color: #7378ba;
   color: white;
   border-radius: 6px;
-  font-size: 16px; }
+  font-size: 16px;
+  width: 90%; }
   .alert strong {
     font-size: inherit; }
 
@@ -579,6 +597,9 @@ form.search button:hover {
     margin: auto 0 auto auto;
     font-size: 0.9em; }
 
+#nobottom {
+  border-bottom: none; }
+
 .recentActivity h3 {
   margin: 1em 0; }
 
@@ -587,6 +608,8 @@ form.search button:hover {
   padding: 1em 0;
   border-bottom: 1px grey solid;
   justify-content: left; }
+  .recentActivityCard:last-child {
+    border-bottom: none; }
   .recentActivityCard img {
     height: 35px;
     width: 35px;
@@ -609,7 +632,8 @@ form.sendEmail {
   form.sendEmail label {
     display: none; }
   form.sendEmail input,
-  form.sendEmail textarea {
+  form.sendEmail textarea,
+  form.sendEmail button {
     background: #fbfbfb;
     border: 1px block solid;
     margin: 1em 0 0 0;
@@ -763,6 +787,8 @@ body {
   .traffic {
     grid-area: traffic;
     border-bottom: #dcdcdc solid 1px; }
+    .traffic .traffic-chart {
+      height: 300px; }
 
   .dailyTraffic {
     grid-area: dailyTraffic;

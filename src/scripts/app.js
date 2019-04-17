@@ -134,3 +134,32 @@ createCircleChart(
   labelsCircleChart,
   dataCircleChart
 );
+
+// Message User
+
+const messageDiv = document.getElementsByClassName("sendEmail")[0];
+let search = document.getElementById("email");
+let message = document.getElementById("message");
+const send = document.getElementById("send");
+
+function sendMail(element) {
+  element.addEventListener("click", e => {
+    let ev = e;
+    let name = search.value;
+    let currentMessage = message.value;
+    if (e.target.tagName === "BUTTON") {
+      ev.preventDefault();
+      if (name === "") {
+        alert("You have to enter a name.");
+      } else if (currentMessage === "") {
+        alert("You have to enter a message.");
+      } else {
+        search.value = "";
+        message.value = "";
+        alert("Message to " + name + " suggessfully sent!");
+      }
+    }
+  });
+}
+
+sendMail(messageDiv);

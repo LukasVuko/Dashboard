@@ -90,6 +90,7 @@ form.search button:hover {
   color: white;
   border-radius: 6px;
   font-size: 16px;
+  width: 90%;
   strong {
     font-size: inherit;
   }
@@ -241,6 +242,10 @@ form.search button:hover {
   }
 }
 
+#nobottom {
+  border-bottom: none;
+}
+
 // Recent Actity
 
 .recentActivity {
@@ -254,6 +259,9 @@ form.search button:hover {
   padding: 1em 0;
   border-bottom: 1px grey solid;
   justify-content: left;
+  &:last-child {
+    border-bottom: none;
+  }
   img {
     height: 35px;
     width: 35px;
@@ -287,7 +295,8 @@ form.sendEmail {
     display: none;
   }
   input,
-  textarea {
+  textarea,
+  button {
     background: $color-background-off-white;
     border: 1px block solid;
     margin: 1em 0 0 0;
@@ -302,6 +311,7 @@ form.sendEmail [type="Submit"] {
   color: white;
   font-weight: 800;
   border: none;
+
   &:hover {
     background-color: $color-background-lighten;
   }

@@ -44,3 +44,30 @@ header {
     }
   }
 }
+
+.dotContainer {
+  position: relative;
+}
+.green-dot {
+  // position: absolute;
+  // width: 0.4375em;
+  // height: 0.4375em;
+  // background-color: #81c98f;
+  // border-radius: 50%;
+  // top: 8px;
+  // right: 175px;
+  position: absolute;
+  width: 0.4375em;
+  height: 0.4375em;
+  background-color: #81c98f;
+  border-radius: 50%;
+  right: 0.75em;
+  top: 0em;
+}
+
+.notBell {
+  transition: transform 0.5s ease-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
