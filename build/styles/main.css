@@ -619,6 +619,9 @@ form.search button:hover {
     .recentActivityCard .recentActivityMiniCard .activity {
       color: #7378ba;
       font-size: 0.8em; }
+    .recentActivityCard .recentActivityMiniCard .time {
+      color: grey;
+      font-size: 0.8em; }
   .recentActivityCard .arrow {
     margin: auto 0 auto 1em;
     font-size: 0.9em; }
